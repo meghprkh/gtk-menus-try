@@ -1,8 +1,4 @@
-int main (string args[]) {
-	Gtk.init (ref args);
+int main (string[] args) {
 	var app = new ValaGtk.Application ();
-	app.destroy.connect(Gtk.main_quit);
-	app.show_all ();
-	Gtk.main ();
-	return 0;
+	return app.run (args);
 }

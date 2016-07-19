@@ -2,5 +2,6 @@
 <gresources>
   <gresource prefix="/org/gnome/ValaGtk">
     <file>app.ui</file>
+    <file>menu.ui</file>
   </gresource>
 </gresources>

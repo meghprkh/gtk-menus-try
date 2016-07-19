@@ -1,6 +1,7 @@
 vala_sources = [
     'main.vala',
     'Application.vala',
+    'Window.vala',
 ]
 
 vala_args = [
