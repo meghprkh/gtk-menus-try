@@ -10,15 +10,12 @@ public class ValaGtk.Application : Gtk.Application {
 			this.release ();
 		});
 		this.add_action (simple_action);
-		SimpleAction stateful_action = new SimpleAction.stateful ("expelliarmus", null, new Variant.boolean (false));
-		stateful_action.activate.connect (() => {
+		SimpleAction stateful_action = new SimpleAction.stateful ("expelliarmus", VariantType.STRING, new Variant.string ("a1"));
+		stateful_action.activate.connect ((to) => {
 			stdout.printf ("action %s activated\n", stateful_action.get_name ());
-
 			this.hold ();
-			Variant state = stateful_action.get_state ();
-			bool b = state.get_boolean ();
-			stateful_action.set_state (new Variant.boolean (!b));
-			stdout.printf ("state change %s -> %s\n", b.to_string (), (!b).to_string ());
+			stateful_action.set_state (to);
+			print (@"state change to $(to.get_string())\n");
 			this.release ();
 		});
 		this.add_action (stateful_action);
