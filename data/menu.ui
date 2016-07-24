@@ -6,7 +6,7 @@
         <attribute name="action">app.incendio</attribute>
       </item>
     </section>
-    <section>
+    <submenu id="abcd">
       <attribute name="label" translatable="yes">Defensive Charms</attribute>
       <item>
         <attribute name="label" translatable="yes">Expelliarmus</attribute>
@@ -26,6 +26,6 @@
         <attribute name="target">a3</attribute>
         <attribute name="icon">/usr/share/my-app/poof!.png</attribute>
       </item>
-    </section>
+    </submenu>
   </menu>
 </interface>
