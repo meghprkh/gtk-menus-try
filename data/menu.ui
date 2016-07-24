@@ -11,6 +11,19 @@
       <item>
         <attribute name="label" translatable="yes">Expelliarmus</attribute>
         <attribute name="action">app.expelliarmus</attribute>
+        <attribute name="target">a1</attribute>
+        <attribute name="icon">/usr/share/my-app/poof!.png</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Expelliarmus2</attribute>
+        <attribute name="action">app.expelliarmus</attribute>
+        <attribute name="target">a2</attribute>
+        <attribute name="icon">/usr/share/my-app/poof!.png</attribute>
+      </item>
+      <item>
+        <attribute name="label" translatable="yes">Expelliarmus3</attribute>
+        <attribute name="action">app.expelliarmus</attribute>
+        <attribute name="target">a3</attribute>
         <attribute name="icon">/usr/share/my-app/poof!.png</attribute>
       </item>
     </section>
